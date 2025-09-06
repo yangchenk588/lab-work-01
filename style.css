@@ -1,0 +1,124 @@
+/* =======================
+   GENERAL BODY STYLES
+   Applies to the whole webpage
+   ======================= */
+body {
+    font-family: 'Open Sans', sans-serif; /* Sets the default font for the page */
+    background-color: #fff; /* White background for the page */
+    color: #333; /* Default text color: dark grey */
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+}
+
+/* =======================
+   TOPBAR STYLES
+   The blue horizontal bar at the top
+   ======================= */
+.topbar {
+    background: #5888b9; /* Blue background color */
+    color: #fff; /* Text color white */
+    padding: 0.5em; /* Inner spacing */
+    width: 100%; /* Takes full width of viewport */
+}
+
+/* Navigation links inside the topbar */
+.nav-links {
+    list-style: none; /* Removes default bullets from the list */
+    display: flex; /* Makes links horizontal */
+    gap: 2em; /* Space between each link */
+    justify-content: center; /* Centers links horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual topbar link styles */
+.nav-links li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 14px; /* Sets font size */
+}
+
+/* =======================
+   LOGO STYLES
+   ======================= */
+.logo {
+    height: 15vh; /* Logo height is 15% of viewport height */
+    margin-top: -3em; /* Moves the logo slightly upward */
+}
+
+/* =======================
+   MAIN NAVIGATION BAR
+   Links with small descriptions under logo
+   ======================= */
+.main-nav {
+    display: flex; /* Layout links in a row */
+    justify-content: space-around; /* Even spacing between sections */
+    background-color: #fff; /* White background */
+    padding: 1em 4em 1em 2em; /* Top, right, bottom, left padding */
+}
+
+/* Individual nav sections (ABOUT SCE, PROGRAMMES, etc.) */
+.nav-section {
+    text-align: center; /* Centers text inside each section */
+    padding: 1em; /* Adds inner spacing */
+}
+
+/* Links inside main navigation sections */
+.nav-section a {
+    display: block; /* Makes link a block to appear above description */
+    color: #000; /* Black text color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes link text bold */
+}
+
+/* Paragraph under each nav section link */
+.nav-section p {
+    font-size: 0.75em; /* Smaller font size */
+    color: #555; /* Grey text color */
+}
+
+/* Special red button style for STRATEGIC PLAN link */
+.btn-red {
+    background-color: #e74c3c; /* Red background */
+    color: #fff; /* White text */
+    padding: 1em 2em; /* Inner spacing */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+}
+
+/* =======================
+   BANNER STYLES
+   For announcements like semester reporting dates
+   ======================= */
+.banner {
+    background-color: #1565c0; /* Dark blue background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 0.5em; /* Inner spacing */
+    font-weight: bold; /* Bold text */
+}
+
+/* =======================
+   MAIN CONTENT AREA
+   ======================= */
+.main-content {
+    display: flex; /* Layout children (video + greetings) in a row */
+    padding: 1em 10%; /* Padding top/bottom 1em, left/right 10% of viewport */
+    gap: 5em; /* Space between video and greetings sections */
+}
+
+/* Video container flex sizing */
+.video-container {
+    flex: 1 1 45%; /* Flexible box: grow/shrink with base width 45% */
+}
+
+/* Greetings text container */
+.greetings {
+    flex: 1 1 45%; /* Flexible box: grow/shrink with base width 45% */
+}
+
+/* Paragraph text inside greetings */
+.greetings p {
+    text-align: justify; /* Justifies text for neat alignment on both sides */
+}
